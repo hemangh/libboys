@@ -1,0 +1,1 @@
+add_library(boys_func STATIC libboys.f90 libboys_data.f90)
