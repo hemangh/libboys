@@ -10,6 +10,38 @@ This is the README for libboys, a FORTRAN90 library to numerically evaluate the 
 
 This function is needed for quantum chemical calculations to solve molecular integrals. However, there is no analytical solution to solve the Boys function (except for very specific cases). The accuracy of the numerical implementation in libboys is achieved by precalculated values and a recursive formula up to six orders.
 
+CMake addition
+--------------
+
+1. Create a build directory:
+   ```bash
+   mkdir build
+2. Change into the build directory:
+
+    ```bash
+    cd build
+
+3. Run CMake to configure the project:
+
+    ```bash
+    cmake ..
+
+4. Build the project:
+
+    ```bash
+    make
+
+5. Optionally, manually run the test:
+
+    ```bash
+    make run_test
+
+6. Run all tests using CTest:
+
+    ```bash
+    ctest
+
+
 Literature
 ----------
 
