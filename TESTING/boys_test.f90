@@ -27,7 +27,7 @@ program boys_test
         write(*,'(A5,5A22)') "N", "X", "calculated value", "reference value", "difference", "rel. difference"
         write(*,*) "---------------------------------------------------------------------------------------------------------------------"
         
-        open(unit=20,file='benchmark.values',status='old',action='read',iostat=io_error)
+        open(unit=20,file='../../input/benchmark.values',status='old',action='read',iostat=io_error)
         if ( io_error .eq. 0 ) then
         
                 do
